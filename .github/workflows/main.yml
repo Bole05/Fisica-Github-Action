@@ -23,13 +23,14 @@ jobs:
           run: mkdir artifact/PyshicsGame
 
         - name: Copy the executable to the artifact directory
-          run: copy path\Build\PhysicsGame\Release\Win32\PhysicsGame.exe
+          run: copy path\Build\PhysicsGame\Release\Win32\PhysicsGame.exe artifact\PyshicsGame\
         
         - name: Upload artifact
-          uses: actions/upload-artifact@v3
+          uses: actions/upload-artifact@v4
           with:
-           name: PyshicsGame
-           path: artifact/PyshicsGame
+             name: PyshicsGame
+             path: artifact\PyshicsGame
+
 
 
         
