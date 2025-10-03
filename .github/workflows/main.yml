@@ -23,7 +23,11 @@ jobs:
           run: mkdir artifact/PyshicsGame
 
         - name: Copy the executable to the artifact directory
-          run: copy path\to\your\game.exe artifact\PyshicsGame\
+          run: copy path/build/PyshicsGame/Release/Win32/PyshicsGame.exe
+
+
+
+
       
         - name: List artifact contents
           run: dir artifact\PyshicsGame
