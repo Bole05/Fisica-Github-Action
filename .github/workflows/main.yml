@@ -2,6 +2,8 @@ name: Build
 
 on:
  push:
+  tags:
+
   branches:
   - main
 
@@ -30,6 +32,17 @@ jobs:
           with:
              name: PyshicsGame
              path: artifact\PyshicsGame
+       
+    release:
+       needs: build
+       run-on: ubuntu-lastest
+
+       steps:
+        - name:
+        - uses:
+        
+        
+       
 
 
 
